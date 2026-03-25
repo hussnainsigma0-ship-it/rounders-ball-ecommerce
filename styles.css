@@ -1,0 +1,95 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+}
+
+.nav-link {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin: 10px;
+}
+
+.card-text {
+    margin: 10px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+}
+
+/* Scroll Animation */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add other UI component styles as needed */
